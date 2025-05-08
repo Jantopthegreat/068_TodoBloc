@@ -7,6 +7,12 @@ class TodoPage extends StatelessWidget {
   Widget build(BuildContext context) {
      final _key = GlobalKey<FormState>();
     final _controller = TextEditingController();
-    return const Scaffold();
+    return const Scaffold(
+        body: SafeArea(
+           child: Padding(
+          padding: EdgeInsets.all(16.0),
+           )
+        )
+    );
   }
 }
